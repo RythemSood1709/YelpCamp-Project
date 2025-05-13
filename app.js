@@ -54,7 +54,7 @@ app.use(mongoSanitize());
 
 
 const store = MongoStore.create({
-    mongoUrl: 'mongodb://127.0.0.1:27017/yelpCamp',
+    mongoUrl: dbUrl,
     touchAfter: 24 * 60 * 60,
     crypto: {
         secret: 'thisshouldbeabettersecret!'
